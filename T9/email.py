@@ -43,6 +43,7 @@ def read_email(user_choice, inbox):
     Subject: {inbox[user_choice].subject_line}
     Message Content: {inbox[user_choice].email_content}
     --------------------------------------------------------------------------------------------------------------------''')
+    print("Message Read")
     inbox[user_choice].mark_as_read()
 
 # check for emails not read
